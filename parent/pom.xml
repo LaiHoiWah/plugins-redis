@@ -19,11 +19,50 @@
         <apache.maven-compiler.version>3.8.1</apache.maven-compiler.version>
         <apache.maven-jar.version>3.2.0</apache.maven-jar.version>
         <apache.maven-resources.version>3.2.0</apache.maven-resources.version>
+
+        <apache.commons-pool2.version>2.11.1</apache.commons-pool2.version>
+        <jedis.version>4.2.3</jedis.version>
+        <junit.version>4.13</junit.version>
+        <lombok.version>1.18.12</lombok.version>
+        <meowu.commons.version>0.0.1</meowu.commons.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <!-- apache -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-pool2</artifactId>
+                <version>${apache.commons-pool2.version}</version>
+            </dependency>
 
+            <!-- jedis -->
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
+            </dependency>
+
+            <!-- meowu -->
+            <dependency>
+                <groupId>com.meowu.commons</groupId>
+                <artifactId>commons</artifactId>
+                <version>${meowu.commons.version}</version>
+            </dependency>
+
+            <!-- junit -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+
+            <!-- lombok -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
