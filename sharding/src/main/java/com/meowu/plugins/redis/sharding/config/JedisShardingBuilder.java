@@ -1,4 +1,4 @@
-package com.meowu.plugins.redis.sharded.config;
+package com.meowu.plugins.redis.sharding.config;
 
 import com.google.common.collect.Lists;
 import org.apache.commons.collections4.CollectionUtils;
@@ -34,7 +34,6 @@ public class JedisShardingBuilder{
 
     private void defaultConfig(){
         config = DefaultJedisClientConfig.builder()
-                                         .
                                          .build();
     }
 }
